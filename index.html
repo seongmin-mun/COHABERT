@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+      <link href="images/Seongmin.jpg" rel="shortcut icon">
+    <title>COHABERT</title><!--<link rel="stylesheet" href="./stylesheets/bubble_style.css">-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script src="./javascripts/d3.v3.min.js" charset="utf-8"></script>
+    <script src="./javascripts/d3.v4.js" charset="utf-8"></script>
+    <script src="./javascripts/jquery-1.12.0.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--데이터파트-->
+    <script src="./Data/DSMtSNEr.js" charset="utf-8"></script>
+    <!--스타일-->
+    <link rel="stylesheet" href="./stylesheets/COHABERT.css">
+
+    </head>
+    <body>
+        <div id="header">
+          <div id="header_left">
+              <p id="header_p">COHABERT</p>
+          </div>
+          <div id="header_right">
+              <p id="header_p"><img src="images/person_b.png" id="header_img" align="right" onclick="javascript:newin=window.open('about:blank');newin.location.href='https://seongmin-mun.github.io/MyWebsite/Seongmin/index.html';"  alt="Developer_homepage" /></p>
+          </div>
+
+        </div>
+        <div id="section">
+          <div id="section_top">
+            <div id="section_top_right">
+              <img src="images/BERT.png" id="section_img" onclick="javascript:newin=window.open('about:blank');newin.location.href='https://huggingface.co/transformers/model_doc/roberta.html';" alt="RoBERTa" />
+            </div>
+            <div id="section_top_left">
+              <p id="section_top_left_p">This project aims to see the contextual relationship between contexts involving the target word <i>quite</i> by employing the RoBERTa model</p>
+            </div>
+          </div>
+          <div id="section_bottom">
+            <div id="section_bottom_left">
+              <div id="section_bottom_left_top">
+                <div id="section_bottom_left_top_left">
+                  <p id="select_option_p">COHA decades</p>
+                  <select id="op_decade_left">
+                      <option value="1810to1850" selected="selected">1810to1850</option>
+                      <option value="1860s">1860s</option>
+                      <option value="1870s">1870s</option>
+                      <option value="1880s">1880s</option>
+                      <option value="1890s">1890s</option>
+                      <option value="1900s">1900s</option>
+                      <option value="1910s">1910s</option>
+                      <option value="1920s">1920s</option>
+                      <option value="1930s">1930s</option>
+                      <option value="1940s">1940s</option>
+                      <option value="1950s">1950s</option>
+                      <option value="1960s">1960s</option>
+                      <option value="1970s">1970s</option>
+                      <option value="1980s">1980s</option>
+                      <option value="1990s">1990s</option>
+                      <option value="2000s">2000s</option>
+                  </select>
+                </div>
+                <div id="section_bottom_left_top_right">
+                  <p id="top_right_p">Selected context</p>
+                  <div id="container_left">
+                    <table class="table_left" style="margin-bottom: 0px;">
+                        <thead>
+                            <tr>
+                                <th>categories</th>
+                                <th>details</th>
+                            </tr>
+                        </thead>
+                        <tbody id="contextTable_left">
+                        </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div id="section_bottom_left_bottom">
+                <p id="main_p">Distributional semantic map with t-SNE</p>
+              </div>
+            </div>
+            <div id="section_bottom_right">
+              <div id="section_bottom_right_top">
+                <div id="section_bottom_right_top_left">
+                  <p id="select_option_p">COHA decades</p>
+                  <select id="op_decade_right">
+                      <option value="1810to1850" selected="selected">1810to1850</option>
+                      <option value="1860s">1860s</option>
+                      <option value="1870s">1870s</option>
+                      <option value="1880s">1880s</option>
+                      <option value="1890s">1890s</option>
+                      <option value="1900s">1900s</option>
+                      <option value="1910s">1910s</option>
+                      <option value="1920s">1920s</option>
+                      <option value="1930s">1930s</option>
+                      <option value="1940s">1940s</option>
+                      <option value="1950s">1950s</option>
+                      <option value="1960s">1960s</option>
+                      <option value="1970s">1970s</option>
+                      <option value="1980s">1980s</option>
+                      <option value="1990s">1990s</option>
+                      <option value="2000s">2000s</option>
+                  </select>
+                </div>
+                <div id="section_bottom_right_top_right">
+                  <p id="top_right_p">Selected context</p>
+                  <div id="container_right">
+                    <table class="table_right" style="margin-bottom: 0px;">
+                        <thead>
+                            <tr>
+                                <th>categories</th>
+                                <th>details</th>
+                            </tr>
+                        </thead>
+                        <tbody id="contextTable_right">
+                        </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div id="section_bottom_right_bottom">
+                <p id="main_p">Distributional semantic map with t-SNE</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--메인코드-->
+        <script src="./javascripts/COHABERT.js" charset="utf-8"></script>
+
+    </body>
+</html>

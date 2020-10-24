@@ -10,7 +10,7 @@ COHABERT was made to see the contextual relationship between contexts involving 
 ### Screenshots
 -----------
 <div>
-  <img src="./images/COHABERT.png" class="img-rounded" style="width:100%;"></img>
+  <a target="_blank" rel="noopener noreferrer" href="https://seongmin-mun.github.io/COHABERT/index.html"><img src="./images/COHABERT.png" style="max-width:100%;"></a>
 </div>
 
 - [Try to use COHABERT](https://seongmin-mun.github.io/COHABERT/index.html)
